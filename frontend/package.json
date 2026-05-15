@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-frontend",
+  "version": "1.0.0",
+  "description": "React frontend for a full-stack personal portfolio.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run build:file",
+    "build:file": "rolldown src/main.jsx --format iife --name PortfolioApp --file dist/portfolio-file.js --platform browser",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "^8.0.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {}
+}
